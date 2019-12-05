@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Krampus_Example' do
+  pod 'Krampus', :path => '../'
+
+  target 'Krampus_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
