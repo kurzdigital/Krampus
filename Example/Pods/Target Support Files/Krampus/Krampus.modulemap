@@ -1,0 +1,6 @@
+framework module Krampus {
+  umbrella header "Krampus-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Krampus",
+  "version": "0.1.0",
+  "summary": "A short description of Krampus.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Christian Braun/Krampus",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Christian Braun": "braun.christian.bamberg@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Christian Braun/Krampus.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Krampus/Classes/**/*"
+}

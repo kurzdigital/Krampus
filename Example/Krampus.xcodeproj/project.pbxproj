@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06BC0D1495AB854B23D7B0F4 /* Krampus.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Krampus.podspec; path = ../Krampus.podspec; sourceTree = "<group>"; };
+		06BC0D1495AB854B23D7B0F4 /* Krampus.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Krampus.podspec; path = ../Krampus.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		19880FF7C1AFE597B24C38B8 /* Pods-Krampus_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Krampus_Tests.debug.xcconfig"; path = "Target Support Files/Pods-Krampus_Tests/Pods-Krampus_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Krampus_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Krampus_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,8 +45,8 @@
 		9FB2280E1442A800800FE268 /* Pods_Krampus_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Krampus_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5632064FB2D4D90B8719899 /* Pods_Krampus_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Krampus_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C03D5940E268454771461559 /* Pods-Krampus_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Krampus_Tests.release.xcconfig"; path = "Target Support Files/Pods-Krampus_Tests/Pods-Krampus_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F8E1D1D82F1EFB3A6F1C5993 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		FC5E444CEA1953D689D0B484 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F8E1D1D82F1EFB3A6F1C5993 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		FC5E444CEA1953D689D0B484 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +147,6 @@
 				19880FF7C1AFE597B24C38B8 /* Pods-Krampus_Tests.debug.xcconfig */,
 				C03D5940E268454771461559 /* Pods-Krampus_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

@@ -1,0 +1,16 @@
+PODS:
+  - Krampus (0.1.0)
+
+DEPENDENCIES:
+  - Krampus (from `../`)
+
+EXTERNAL SOURCES:
+  Krampus:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Krampus: a9f2992d8164fcdff0177670cfa2129b7699372a
+
+PODFILE CHECKSUM: f780253d65c14adc5ce2e10ad6a10c66b9f9e120
+
+COCOAPODS: 1.8.3
