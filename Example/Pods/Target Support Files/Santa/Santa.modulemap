@@ -1,0 +1,6 @@
+framework module Santa {
+  umbrella header "Santa-umbrella.h"
+
+  export *
+  module * { export * }
+}

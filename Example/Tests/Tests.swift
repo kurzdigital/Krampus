@@ -1,28 +1,60 @@
 import XCTest
+import Santa
 import Krampus
 
 class Tests: XCTestCase {
-    
+    let webservice = ImplWebservice()
+    lazy var authorization = {
+        return Krampus.keycloakAuthorization(
+            baseUrl: "https://keycloak-url.de",
+            clientId: "client",
+            realm: "realm",
+            redirectUrl: "",
+            keychain: KeycloakKeychain(credentialsServiceName: "KeychainTestKrampusLogin"),
+            webservice: webservice)
+    }()
+
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        webservice.authorization = authorization
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure() {
-            // Put the code you want to measure the time of here.
+
+    func testLoginWithUsernamePassword() {
+        let expec = expectation(description: "Login with username password")
+        authorization.login(withUsername: "username", password: "password") { result in
+            switch result {
+            case .success(let credentials):
+                print(credentials.accessToken)
+                expec.fulfill()
+            case .failure(let error):
+                print(error)
+                XCTFail("Login failed")
+            }
         }
+        waitForExpectations(timeout: 2, handler: nil)
     }
-    
+
+    func testAuthorizationWorking() {
+        let resource = DataResource<String>(url: "requesturl", method: .get, body: nil) { data -> String? in
+            return String(data: data, encoding: .utf8)
+        }
+
+        let expec = expectation(description: "Authenticated network call should work")
+        webservice.load(resource: resource) { response, error in
+            if let error = error {
+                print(error)
+                XCTFail("Unable to authenticate")
+                return
+            }
+            guard let response = response else {
+                XCTFail("Response was empty")
+                return
+            }
+            print(response)
+            XCTAssertTrue(response.first == "{", "Response must be json formatted")
+            expec.fulfill()
+        }
+        waitForExpectations(timeout: 2, handler: nil)
+    }
 }

@@ -1,22 +1,27 @@
 {
   "name": "Krampus",
   "version": "0.1.0",
-  "summary": "A short description of Krampus.",
+  "summary": "Add authorization to the web requests made with the resource based network lib Santa",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Christian Braun/Krampus",
+  "homepage": "https://github.com/kurzdigital/Krampus",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "Christian Braun": "braun.christian.bamberg@gmail.com"
+    "Christian Braun": "christian.braun@kurzdigital.com"
   },
   "source": {
-    "git": "https://github.com/Christian Braun/Krampus.git",
+    "git": "https://github.com/kurzdigital/krampus.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
-  "source_files": "Krampus/Classes/**/*"
+  "source_files": "Krampus/Classes/**/*",
+  "dependencies": {
+    "Santa": [
+      "~> 0.1"
+    ]
+  }
 }
