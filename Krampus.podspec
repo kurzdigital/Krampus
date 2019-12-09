@@ -1,10 +1,11 @@
 Pod::Spec.new do |s|
   s.name             = 'Krampus'
   s.version          = '0.1.0'
-  s.summary          = 'Add authorization to the web requests made with the resource based network lib Santa'
+  s.summary          = 'Add authorization to the web requests made with the resource based network lib Santa. Currently supports Keycloak'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  Provides an authorization plugin for the resource based networking lib Santa. Currently supported are the basic operations for Keycloak. These are login with
+  auth code or username and password aswell als logout and refreshing access tokens. The tokens are stored safely within the users keychain.
                        DESC
 
   s.homepage         = 'https://github.com/kurzdigital/Krampus'
@@ -12,15 +13,10 @@ TODO: Add long description of the pod here.
   s.author           = { 'Christian Braun' => 'christian.braun@kurzdigital.com' }
   s.source           = { :git => 'https://github.com/kurzdigital/krampus.git', :tag => s.version.to_s }
 
+  s.swift_versoin = "5.0"
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'Krampus/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'Krampus' => ['Krampus/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
    s.dependency 'Santa', '~> 0.1'
 end
