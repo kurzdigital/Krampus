@@ -62,7 +62,7 @@ public struct KeycloakAuthorization: Authorization {
         return keychain.readCredentials()
     }
 
-    var loggedIn: Bool {
+    public var loggedIn: Bool {
         guard let keychainKeycloakCredentials = keychainKeycloakCredentials else {
             return false
         }
