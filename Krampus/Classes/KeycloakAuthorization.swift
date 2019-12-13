@@ -76,7 +76,7 @@ public struct KeycloakAuthorization: Authorization {
             switch result {
             case .success(let credentials):
                 mutableRequest.addValue("Bearer \(credentials.accessToken)", forHTTPHeaderField: "Authorization")
-                completion(Result.success(request))
+                completion(Result.success(mutableRequest))
             case .failure(let error):
                 completion(Result.failure(error))
             }
