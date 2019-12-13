@@ -1,8 +1,8 @@
 {
   "name": "Krampus",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "summary": "Add authorization to the web requests made with the resource based network lib Santa. Currently supports Keycloak",
-  "description": "Provides an authorization plugin for the resource based networking lib Santa. Currently supported are the basic operations for Keycloak like login with\nauth code or username and password aswell als Logout and refreshing access tokens. The tokens are stored safely within the users keychain.",
+  "description": "Provides an authorization plugin for the resource based networking lib Santa. Currently supported are the basic operations for Keycloak. These are login with\nauth code or username and password aswell als logout and refreshing access tokens. The tokens are stored safely within the users keychain.",
   "homepage": "https://github.com/kurzdigital/Krampus",
   "license": {
     "type": "MIT",
@@ -13,15 +13,17 @@
   },
   "source": {
     "git": "https://github.com/kurzdigital/krampus.git",
-    "tag": "0.1.0"
+    "tag": "0.1.2"
   },
+  "swift_versions": "5.0",
   "platforms": {
     "ios": "9.0"
   },
   "source_files": "Krampus/Classes/**/*",
   "dependencies": {
     "Santa": [
-      "~> 0.1"
+      "~> 0.2"
     ]
-  }
+  },
+  "swift_version": "5.0"
 }

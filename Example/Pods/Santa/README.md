@@ -49,9 +49,9 @@ extension Products {
 ```
 
 ## Features
-* Support for custom athorization
+* Support for custom authorization
 * Background download tasks
-* Cancelation of running URLSessionTasks
+* Cancelling of running URLSessionTasks
 * ImageCache based on the url
 * Error handling for error status codes and network problems
 

@@ -1,7 +1,7 @@
 PODS:
-  - Krampus (0.1.0):
-    - Santa (~> 0.1)
-  - Santa (0.1.0)
+  - Krampus (0.1.2):
+    - Santa (~> 0.2)
+  - Santa (0.2.0)
 
 DEPENDENCIES:
   - Krampus (from `../`)
@@ -15,8 +15,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Krampus: be09a929183a837108891fd00121be017e291b19
-  Santa: ab939a9a34dd32fa32406ccac8826c9d746afe3d
+  Krampus: 6edfcac23cd9931c9d04a09d7ca61e2535992b48
+  Santa: f676cde2f85b744fe28ec084a03f98558264f33e
 
 PODFILE CHECKSUM: f780253d65c14adc5ce2e10ad6a10c66b9f9e120
 

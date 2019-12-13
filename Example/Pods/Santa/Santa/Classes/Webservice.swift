@@ -16,7 +16,7 @@ public protocol Authorization {
 
 public enum NetworkError: LocalizedError, Equatable {
     case parseUrl
-    case parseData
+    case parseData(message: String)
     case failedAuthorization
     case badResponseCode(code: Int)
     case noInternetConnectivity
@@ -182,7 +182,7 @@ public final class ImplWebservice: NSObject, Webservice {
                 }
                 completion(result, nil)
             } catch {
-                completion(nil, NetworkError.parseData)
+                completion(nil, NetworkError.parseData(message: error.localizedDescription))
             }
         }
         activeTasks[resource.uuid] = dataTask
