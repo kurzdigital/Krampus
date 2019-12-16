@@ -36,6 +36,7 @@ public struct KeycloakAuthorization: Authorization {
     public let redirectUrl: String
     public let keychain: KeycloakKeychain
     public let webservice: Webservice
+    public var useOfflineToken: Bool
 
     public var url: String {
         guard let url = URL(string: baseUrl) else {
@@ -63,11 +64,7 @@ public struct KeycloakAuthorization: Authorization {
     }
 
     public var loggedIn: Bool {
-        guard let keychainKeycloakCredentials = keychainKeycloakCredentials else {
-            return false
-        }
-
-        return keychainKeycloakCredentials.refreshTokenExpiresAt > Date() + KeycloakAuthorization.expirationTolerance
+        return keychainKeycloakCredentials != nil
     }
 
     public func authorize(_ request: URLRequest, for resource: Resource, completion: @escaping (Result<URLRequest, Error>) -> Void) {
@@ -124,11 +121,9 @@ extension KeycloakAuthorization {
         let now = Date()
         if credentials.accessTokenExpiresAt > now + KeycloakAuthorization.expirationTolerance {
             completion(Result.success(credentials))
-        } else if credentials.refreshTokenExpiresAt > now + KeycloakAuthorization.expirationTolerance {
+        } else {
             let resource = refresh(refreshToken: credentials.refreshToken).update(uuid: resource.uuid)
             loadCredentials(resource: resource, completion: completion)
-        } else {
-            completion(Result.failure(AuthError.loginNeeded))
         }
     }
 

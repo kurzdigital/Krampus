@@ -22,11 +22,9 @@ public struct KeycloakKeychain: Codable {
     public func saveCredentials(_ credentials: KeycloakCredentials) throws -> KeychainKeycloakCredentials {
         let now = Date()
         let accessTokenExpiresAt = now.addingTimeInterval(TimeInterval(credentials.accessTokenExpiresIn))
-        let refreshTokenExpiresAt = now.addingTimeInterval(TimeInterval(credentials.refreshTokenExpiresIn))
         let keychainCredentials = KeychainKeycloakCredentials(accessToken: credentials.accessToken,
                                                               refreshToken: credentials.refreshToken,
-                                                              accessTokenExpiresAt: accessTokenExpiresAt,
-                                                              refreshTokenExpiresAt: refreshTokenExpiresAt)
+                                                              accessTokenExpiresAt: accessTokenExpiresAt)
         try Keychain.save(object: keychainCredentials, serviceName: credentialsServiceName)
         return keychainCredentials
     }

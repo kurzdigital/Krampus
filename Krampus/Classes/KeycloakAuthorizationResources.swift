@@ -14,7 +14,10 @@ extension KeycloakAuthorization {
             let clientId = clientId.encodeAsQueryParam() else {
                 fatalError("Redirect URI and clientId must be url encodable")
         }
-        let bodyString = "code=\(code)&client_id=\(clientId)&redirect_uri=\(redirectUrl)&grant_type=authorization_code"
+        var bodyString = "code=\(code)&client_id=\(clientId)&redirect_uri=\(redirectUrl)&grant_type=authorization_code"
+        if useOfflineToken {
+            bodyString.append("&scope=offline_access")
+        }
         return resourceForPost(bodyString, url: tokenUrl)
     }
 
@@ -24,7 +27,10 @@ extension KeycloakAuthorization {
             let clientId = clientId.encodeAsQueryParam() else {
                 fatalError("Redirect URI and clientId must be url encodable")
         }
-        let bodyString = "username=\(username)&password=\(password)&client_id=\(clientId)&grant_type=password"
+        var bodyString = "username=\(username)&password=\(password)&client_id=\(clientId)&grant_type=password"
+        if useOfflineToken {
+            bodyString.append("&scope=offline_access")
+        }
         return resourceForPost(bodyString, url: tokenUrl)
     }
 
