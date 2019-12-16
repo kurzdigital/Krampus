@@ -52,6 +52,7 @@ webservice.authorization = authorization
 * Logout
 * Handle access token refresh
 * Store Keycloak credentials within the users keychain
+* Support offline tokens
 
 ## TODO
 * Write more tests
