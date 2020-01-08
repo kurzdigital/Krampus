@@ -10,7 +10,7 @@ import Foundation
 public struct JWT {
     public let payload: [String: Any]
 
-    init?(with accessToken: String) {
+    public init?(with accessToken: String) {
         let webTokenElements = accessToken.split(separator: ".")
         guard webTokenElements.count == 3,
             let payloadData = Data.resilientBase64Decoded(from: String(webTokenElements[1])),
