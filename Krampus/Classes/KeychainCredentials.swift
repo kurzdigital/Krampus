@@ -7,14 +7,14 @@
 
 import Foundation
 
-public struct KeychainKeycloakCredentials: Codable {
+public struct KeychainCredentials: Codable {
     public let accessToken: String
     public let refreshToken: String
     public let accessTokenExpiresAt: Date
 
     #if DEBUG
-    public static var mocked: KeychainKeycloakCredentials {
-        return KeychainKeycloakCredentials(
+    public static var mocked: KeychainCredentials {
+        return KeychainCredentials(
             accessToken: "MockedToken",
             refreshToken: "MockedRefreshToken",
             accessTokenExpiresAt: Date.distantFuture)
@@ -22,7 +22,7 @@ public struct KeychainKeycloakCredentials: Codable {
     #endif
 }
 
-public struct KeycloakCredentials: Codable {
+public struct Credentials: Codable {
     public let accessToken: String
     public let refreshToken: String
     public let accessTokenExpiresIn: Int64

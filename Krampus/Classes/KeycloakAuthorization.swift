@@ -34,7 +34,7 @@ public struct KeycloakAuthorization: Authorization {
     public let clientId: String
     public let realm: String
     public let redirectUrl: String
-    public let keychain: KeycloakKeychain
+    public let keychain: CredentialsKeychain
     public let webservice: Webservice
     public var useOfflineToken: Bool
 
@@ -51,10 +51,10 @@ public struct KeycloakAuthorization: Authorization {
     var logoutUrl: String {"\(url)/logout"}
 
     #if DEBUG
-    public var mockedCredentials: KeychainKeycloakCredentials?
+    public var mockedCredentials: KeychainCredentials?
     #endif
 
-    var keychainKeycloakCredentials: KeychainKeycloakCredentials? {
+    var keychainCredentials: KeychainCredentials? {
         #if DEBUG
         if let mockedCredentials = mockedCredentials {
             return mockedCredentials
@@ -64,14 +64,14 @@ public struct KeycloakAuthorization: Authorization {
     }
 
     public var jwt: JWT? {
-        guard let accessToken = keychainKeycloakCredentials?.accessToken else {
+        guard let accessToken = keychainCredentials?.accessToken else {
             return nil
         }
         return JWT(with: accessToken)
     }
 
     public var loggedIn: Bool {
-        return keychainKeycloakCredentials != nil
+        return keychainCredentials != nil
     }
 
     public func authorize(_ request: URLRequest, for resource: Resource, completion: @escaping (Result<URLRequest, Error>) -> Void) {
@@ -87,18 +87,32 @@ public struct KeycloakAuthorization: Authorization {
         }
     }
 
-    public func login(withUsername username: String, password: String, completion:  @escaping (Result<KeychainKeycloakCredentials, Error>) -> Void) {
+    public func login(withUsername username: String, password: String, completion:  @escaping (Result<Void, Error>) -> Void) {
         let resource = create(witherUsername: username, password: password)
-        loadCredentials(resource: resource, completion: completion)
+        loadCredentials(resource: resource) { result in
+            switch result {
+            case .success:
+                completion(.success(Void()))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
     }
 
-    public func login(withAuthCode code: String, completion:  @escaping (Result<KeychainKeycloakCredentials, Error>) -> Void) {
+    public func login(withAuthCode code: String, completion:  @escaping (Result<Void, Error>) -> Void) {
         let resource = create(withAuthCode: code)
-        loadCredentials(resource: resource, completion: completion)
+        loadCredentials(resource: resource) { result in
+            switch result {
+            case .success:
+                completion(.success(Void()))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
     }
 
     public func logout(completion: @escaping (Result<Void, Error>) -> Void) {
-        guard let refreshToken = keychainKeycloakCredentials?.refreshToken else {
+        guard let refreshToken = keychainCredentials?.refreshToken else {
             completion(Result.failure(AuthError.alreadyLoggedOut))
             return
         }
@@ -120,8 +134,8 @@ public struct KeycloakAuthorization: Authorization {
 }
 
 extension KeycloakAuthorization {
-    fileprivate func renewOrGetCredentials(for resource: Resource, completion: @escaping (Result<KeychainKeycloakCredentials, Error>) -> Void) {
-        guard let credentials = keychainKeycloakCredentials else {
+    fileprivate func renewOrGetCredentials(for resource: Resource, completion: @escaping (Result<KeychainCredentials, Error>) -> Void) {
+        guard let credentials = keychainCredentials else {
             completion(Result.failure(AuthError.loginErrorMissingCredentials))
             return
         }
@@ -134,7 +148,7 @@ extension KeycloakAuthorization {
         }
     }
 
-    fileprivate func loadCredentials(resource: DataResource<KeycloakCredentials>, completion: @escaping (Result<KeychainKeycloakCredentials, Error>) -> Void) {
+    fileprivate func loadCredentials(resource: DataResource<Credentials>, completion: @escaping (Result<KeychainCredentials, Error>) -> Void) {
         webservice.load(resource: resource) { credentials, error in
             if let error = error {
                 if let error = error as? NetworkError {

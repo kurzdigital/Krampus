@@ -9,11 +9,11 @@ import Foundation
 import Santa
 
 public protocol Authorization: RequestAuthorization {
-    associatedtype Credentials
+    var jwt: JWT? { get }
     
-    func login(withUsername username: String, password: String, completion:  @escaping (Result<Credentials, Error>) -> Void)
+    func login(withUsername username: String, password: String, completion:  @escaping (Result<Void, Error>) -> Void)
 
-    func login(withAuthCode code: String, completion:  @escaping (Result<Credentials, Error>) -> Void)
+    func login(withAuthCode code: String, completion:  @escaping (Result<Void, Error>) -> Void)
 
     func logout(completion: @escaping (Result<Void, Error>) -> Void)
 }

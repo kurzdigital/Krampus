@@ -10,7 +10,7 @@ class Tests: XCTestCase {
             clientId: "client",
             realm: "realm",
             redirectUrl: "",
-            keychain: KeycloakKeychain(credentialsServiceName: "KeychainTestKrampusLogin"),
+            keychain: CredentialsKeychain(credentialsServiceName: "KeychainTestKrampusLogin"),
             webservice: webservice)
     }()
 
@@ -24,8 +24,7 @@ class Tests: XCTestCase {
         let expec = expectation(description: "Login with username password")
         authorization.login(withUsername: "username", password: "password") { result in
             switch result {
-            case .success(let credentials):
-                print(credentials.accessToken)
+            case .success:
                 expec.fulfill()
             case .failure(let error):
                 print(error)

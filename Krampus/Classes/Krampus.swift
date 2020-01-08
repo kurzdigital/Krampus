@@ -14,7 +14,7 @@ public struct Krampus {
         clientId: String,
         realm: String,
         redirectUrl: String,
-        keychain: KeycloakKeychain,
+        keychain: CredentialsKeychain,
         webservice: Webservice,
         useOfflineToken: Bool = false) -> KeycloakAuthorization {
         return KeycloakAuthorization(
