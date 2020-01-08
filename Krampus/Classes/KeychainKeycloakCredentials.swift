@@ -11,6 +11,15 @@ public struct KeychainKeycloakCredentials: Codable {
     public let accessToken: String
     public let refreshToken: String
     public let accessTokenExpiresAt: Date
+
+    #if DEBUG
+    public static var mocked: KeychainKeycloakCredentials {
+        return KeychainKeycloakCredentials(
+            accessToken: "MockedToken",
+            refreshToken: "MockedRefreshToken",
+            accessTokenExpiresAt: Date.distantFuture)
+    }
+    #endif
 }
 
 public struct KeycloakCredentials: Codable {
