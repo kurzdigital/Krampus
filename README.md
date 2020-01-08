@@ -19,7 +19,7 @@ lazy var authorization = {
         clientId: "client",
         realm: "realm",
         redirectUrl: "needed for login with auth code",
-        keychain: KeycloakKeychain(credentialsServiceName: "KeychainTestKrampusLogin"),
+        keychain: CredentialsKeychain(credentialsServiceName: "KeychainTestKrampusLogin"),
         webservice: webservice)
 }()
 ```
@@ -29,7 +29,7 @@ To login with a running keycloak instance:
 ```Swift
 authorization.login(withUsername: "username", password: "password") { result in
     switch result {
-    case .success(let credentials):
+    case .success:
         // The credentials are already saved within the keychain. 
         // Show the user that the login was successful
     case .failure(let error):
