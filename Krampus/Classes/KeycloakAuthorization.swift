@@ -63,6 +63,13 @@ public struct KeycloakAuthorization: Authorization {
         return keychain.readCredentials()
     }
 
+    public var jwt: JWT? {
+        guard let accessToken = keychainKeycloakCredentials?.accessToken else {
+            return nil
+        }
+        return JWT(with: accessToken)
+    }
+
     public var loggedIn: Bool {
         return keychainKeycloakCredentials != nil
     }
