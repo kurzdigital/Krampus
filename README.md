@@ -46,6 +46,8 @@ webservice.authorization = authorization
 ```
 
 ## Features
+* Parse JWT to accessible dictionary
+
 ### Keycloak
 * Login with Auth Code
 * Login with username and password
