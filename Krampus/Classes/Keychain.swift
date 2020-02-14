@@ -16,7 +16,7 @@ import Foundation
  */
 
 /// Taken from the GenericKeychain example from apple (Version 4.0)
-struct Keychain {
+public struct Keychain {
     // MARK: Types
 
     enum KeychainError: Error {
