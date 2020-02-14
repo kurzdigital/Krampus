@@ -10,6 +10,8 @@ import Santa
 
 public protocol Authorization: RequestAuthorization {
     var jwt: JWT? { get }
+
+    var isLoggedIn: Bool { get }
     
     func login(withUsername username: String, password: String, completion:  @escaping (Result<Void, Error>) -> Void)
 

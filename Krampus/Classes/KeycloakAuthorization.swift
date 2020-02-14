@@ -70,7 +70,7 @@ public struct KeycloakAuthorization: Authorization {
         return JWT(with: accessToken)
     }
 
-    public var loggedIn: Bool {
+    public var isLoggedIn: Bool {
         return keychainCredentials != nil
     }
 
