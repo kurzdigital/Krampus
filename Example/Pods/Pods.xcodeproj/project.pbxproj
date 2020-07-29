@@ -7,152 +7,160 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0858ABFE35FE73DECE47E21177813ACF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6FAE1462D85AF816F322E6547831600 /* Foundation.framework */; };
-		114E04F519532772C374A33FA0BAC85B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6FAE1462D85AF816F322E6547831600 /* Foundation.framework */; };
-		2ADD981BCB409078868CA6CAC8AD5781 /* KeycloakAuthorizationResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FD7FE06124AB5EE8659FF8A762740 /* KeycloakAuthorizationResources.swift */; };
-		360E0F718FACFE796EE4466AF99148D8 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447A15A4ACB8CCA437DBDA997BC300C6 /* Resource.swift */; };
-		3DFAE9AFB1AA8C25967AD92FAB2940F7 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168136E354719FC0B37E77FDC57B1C24 /* Webservice.swift */; };
-		407033B873F6118B2A5871EAB423EDF8 /* Santa-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05207D62AE4AB8664ECF98E27C4071F3 /* Santa-dummy.m */; };
-		4EF7EFD853BA4764D12CE4C3783B8886 /* Krampus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EB32B5958359BF893AEB0741F25070 /* Krampus.swift */; };
-		5086A0281954CC96EE20F442C562FE67 /* Pods-Krampus_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A8DF8886109BFBCE160238225ED8450 /* Pods-Krampus_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		53A9A16FE1DDC15233743783DF3C60E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6FAE1462D85AF816F322E6547831600 /* Foundation.framework */; };
-		5D826DF531260474F612FF55E3F4C9C4 /* KeycloakAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B638316CB639292D5A49BD1FC4EE0 /* KeycloakAuthorization.swift */; };
-		71CC33D79906A479DE74B8366E3A5A5C /* Pods-Krampus_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E7F4834B11D718405E8F00A5674C443 /* Pods-Krampus_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		86890A6EB83609F1C5F8E897648177BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6FAE1462D85AF816F322E6547831600 /* Foundation.framework */; };
-		8788CAA6578EE323B562B319140EFEDE /* Santa-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A623B15309EBD46CB7E830FD098A345D /* Santa-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		90937FC7A1633377DAAFCC80CF8055E2 /* Pods-Krampus_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B6F37D56A58DA695EB7E596783A52D /* Pods-Krampus_Example-dummy.m */; };
-		93ED691446B53C280394668FE8433242 /* Santa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427954D219327C10DA271C1E43747E10 /* Santa.framework */; };
-		96E0C7CDE0FD480A64402F7F2F1A83A4 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D77DED0385DBCA58866C3909FC9C7F /* ImageCache.swift */; };
-		9A85C7E8CF907415FEA18EA0B74B3833 /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FA1306E4BFB629D867A31D554815C9 /* Authorization.swift */; };
-		A9F77EF99C2984BD8860E470222D73FD /* Pods-Krampus_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B27F77959941E92A4B30CEC0073AF7CD /* Pods-Krampus_Tests-dummy.m */; };
-		B47530D9BB2B6E4B9570F3D01710DA9D /* DownloadedFilesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A784E51C85713D07B89DC1BE0D980CD /* DownloadedFilesManager.swift */; };
-		B6FF30ACD690C7FD79E24C428F79E434 /* Krampus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E05E77DD2EFE7480876C98D64CA059E /* Krampus-dummy.m */; };
-		D5FD6B8224F0EF365261B513A8E0F002 /* Krampus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F3ECA9244D79319E74A940B8A2AB3738 /* Krampus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7B47BAF17C19D1696DC4064D8236CCF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4865FD1DA2BCA1BE0DC5D24AFEAC1630 /* UIKit.framework */; };
-		D91A1AE0C0A6E4DB4CD4C1DBC0346B3F /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D91ACE837634E9D1AE1079128A829 /* JWT.swift */; };
-		F663028D7C660604666EBC31710A7EFF /* CredentialsKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD802532B8AF72EC749FE1875DB94FB0 /* CredentialsKeychain.swift */; };
-		F9EB761497871279F5D5536E91E20921 /* KeychainCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC207A04E6B3420112AF6D0AFA222348 /* KeychainCredentials.swift */; };
-		FA49706A3E3B97AE930183E3669C422E /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFC1105CF07EECF9543666956474439 /* Keychain.swift */; };
+		0460FF23FE4512C0897A76863F647AA6 /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B290A771F51E9904B09E4204436CA6D /* Authorization.swift */; };
+		11B37AE961F1EA3AD154A2E8BA07BA4A /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5AC457088846A8C2C36D61631A4178 /* Webservice.swift */; };
+		1451FAB2D651B9B49FDE34B7EC17B610 /* Santa-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 92142942DA12522E835188EEA1AD64D7 /* Santa-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19FC0A7F873655B3446818607E0485CF /* Krampus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A031765D986B417BA1997C797C7FEC /* Krampus-dummy.m */; };
+		1CA296B419D26114FE07690183B0C2BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6FAE1462D85AF816F322E6547831600 /* Foundation.framework */; };
+		2165757087C034413773F9199D0F67E6 /* DownloadResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15701E3144C329A9FDD89DCC0E64ACC0 /* DownloadResource.swift */; };
+		29D1D4520E2DB6428E1668D0BE0F3FB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6FAE1462D85AF816F322E6547831600 /* Foundation.framework */; };
+		3A9C5E1F26C0AC38A29B0765281BBE24 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC527E0D302AABC499554E0FC5C05B5 /* Resource.swift */; };
+		3C261BEBCE3DE4779321FD9E40A96641 /* Pods-Krampus_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A8DF8886109BFBCE160238225ED8450 /* Pods-Krampus_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44F0B3B78288B35365E650CB2C53A8DB /* Header+Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F467BE8EEB62E028AEF0952D359D887 /* Header+Method.swift */; };
+		45B286A53F34207F136190A750950D53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6FAE1462D85AF816F322E6547831600 /* Foundation.framework */; };
+		52B4F629433C054ABEA35C4268D972A3 /* Pods-Krampus_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B6F37D56A58DA695EB7E596783A52D /* Pods-Krampus_Example-dummy.m */; };
+		5895D10FD7E7A0EEABE044574E56030F /* KeychainCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208A3B74CA0C91238F4442AE0AABA45F /* KeychainCredentials.swift */; };
+		626C7643B7CE70C6CD0A02CD009FECC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6FAE1462D85AF816F322E6547831600 /* Foundation.framework */; };
+		6FD1ABF48DC493FD2CF41758D08DE7FB /* Pods-Krampus_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E7F4834B11D718405E8F00A5674C443 /* Pods-Krampus_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71980A2EC31B56FE118BA00D173B12F7 /* Santa-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 559DF583F43D1CBA722BD1910B6F4E98 /* Santa-dummy.m */; };
+		728FE684135D20AC583EB01A75C3DA39 /* KeycloakAuthorizationResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB9EDD69369E1C5B07DBE4C1F979953 /* KeycloakAuthorizationResources.swift */; };
+		7EA04E14C856AA5CA95B899FD98C0901 /* Krampus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C67717899215F066906F7AA7ACA5A7F0 /* Krampus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		870759CC1B7347E2D40B7886A7E2A525 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = C006E4ADD66C3CE41C3E19235934BC45 /* ImageCache.swift */; };
+		8B68329F3F1E76654D5D423EEBFE8D5A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4865FD1DA2BCA1BE0DC5D24AFEAC1630 /* UIKit.framework */; };
+		9BD687FB09808C78602BB9675FCF1EA1 /* Santa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427954D219327C10DA271C1E43747E10 /* Santa.framework */; };
+		A33EE2DB36BB2C93AABEB68BF8890BB6 /* DataResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5D74546056B467E4F6008EF59B18BE /* DataResource.swift */; };
+		A534439AB040BAC912FBACA972632092 /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E633D1C33DA5D72E21DEE80AD43260D /* JWT.swift */; };
+		BA89E6E34AEB424FDA5EA8CCFDB3BC29 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56421987802781FDD390ADFDF77FF9DA /* Keychain.swift */; };
+		BE26CBC0D54913BB95D6254030655D7A /* KeycloakAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF837E858B9299A85BA55C988BF2FB15 /* KeycloakAuthorization.swift */; };
+		E6F2483AFC3E6B39B1DFBAC3E4939B6A /* Pods-Krampus_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B27F77959941E92A4B30CEC0073AF7CD /* Pods-Krampus_Tests-dummy.m */; };
+		F106C458F8C97D511E5515C5AD75C923 /* Krampus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC79D115BA59CBBBDC39CC76628A6E4 /* Krampus.swift */; };
+		F554CCE1CB87291CA353B1C815C77E92 /* DownloadedFilesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CDB80EE1E2760EC6089F26AF6B584B /* DownloadedFilesManager.swift */; };
+		F7370D60F0CAEC6D719083BCF5E1FF6E /* CredentialsKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8D622E4D0CD5094A1509F53BC1140C /* CredentialsKeychain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		36C0B0E2D9B742108CBDF39D4CA3082B /* PBXContainerItemProxy */ = {
+		5514CDB621BCDB3389E56824F1FCDB3E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3CCFFA8FCB87C5ABC9A351C1E003C879;
 			remoteInfo = Santa;
 		};
-		96DBF2F5B0514747BEAEEC7106E1B105 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9B75869FFBF8FC9BA1EBEAF238AD7080;
-			remoteInfo = "Pods-Krampus_Example";
-		};
-		A7E9D00B8B6EC93DF4C86E87A1C70BF8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3CCFFA8FCB87C5ABC9A351C1E003C879;
-			remoteInfo = Santa;
-		};
-		F98ED6184E1544D066FBB5CC3F618A2D /* PBXContainerItemProxy */ = {
+		A057B3420C545EAE875959FFF6143850 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F16F690E6A2DA0A5043EFDD39DA9D104;
 			remoteInfo = Krampus;
 		};
+		CADF08D087DC444D0C6B495DEDEB4D76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CCFFA8FCB87C5ABC9A351C1E003C879;
+			remoteInfo = Santa;
+		};
+		DD22ED85E283C627379BC3C02C69D2E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B75869FFBF8FC9BA1EBEAF238AD7080;
+			remoteInfo = "Pods-Krampus_Example";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		04FAAD7EC3B27F32FE71C970E0E1E47E /* Pods-Krampus_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Krampus_Example-Info.plist"; sourceTree = "<group>"; };
-		05207D62AE4AB8664ECF98E27C4071F3 /* Santa-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Santa-dummy.m"; sourceTree = "<group>"; };
 		064EBEC13ECF86614A116D120435DD8E /* Pods-Krampus_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Krampus_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		0663A5FD88824BCC4A1DC332589C8D7B /* Krampus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Krampus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A784E51C85713D07B89DC1BE0D980CD /* DownloadedFilesManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownloadedFilesManager.swift; path = Santa/Classes/DownloadedFilesManager.swift; sourceTree = "<group>"; };
+		0663A5FD88824BCC4A1DC332589C8D7B /* Krampus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Krampus.framework; path = Krampus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B35B7E21A10DFBCC468F83BFF419737 /* Pods-Krampus_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Krampus_Tests-Info.plist"; sourceTree = "<group>"; };
 		0BB82E2455B97E86128719D05BAE9D61 /* Pods-Krampus_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Krampus_Example.release.xcconfig"; sourceTree = "<group>"; };
-		10D77DED0385DBCA58866C3909FC9C7F /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Santa/Classes/ImageCache.swift; sourceTree = "<group>"; };
-		168136E354719FC0B37E77FDC57B1C24 /* Webservice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Webservice.swift; path = Santa/Classes/Webservice.swift; sourceTree = "<group>"; };
+		15701E3144C329A9FDD89DCC0E64ACC0 /* DownloadResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownloadResource.swift; path = Santa/Classes/Model/Download/DownloadResource.swift; sourceTree = "<group>"; };
 		183AC7D42AF3F6A9B385E7B4A8C47BAA /* Pods-Krampus_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Krampus_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1E633D1C33DA5D72E21DEE80AD43260D /* JWT.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JWT.swift; path = Krampus/Classes/JWT.swift; sourceTree = "<group>"; };
+		208A3B74CA0C91238F4442AE0AABA45F /* KeychainCredentials.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainCredentials.swift; path = Krampus/Classes/KeychainCredentials.swift; sourceTree = "<group>"; };
+		27A031765D986B417BA1997C797C7FEC /* Krampus-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Krampus-dummy.m"; sourceTree = "<group>"; };
+		2DB9EDD69369E1C5B07DBE4C1F979953 /* KeycloakAuthorizationResources.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeycloakAuthorizationResources.swift; path = Krampus/Classes/KeycloakAuthorizationResources.swift; sourceTree = "<group>"; };
+		2E7951EF6D0E6E6A8869B666EA7BB608 /* Santa-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Santa-prefix.pch"; sourceTree = "<group>"; };
 		2E7F4834B11D718405E8F00A5674C443 /* Pods-Krampus_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Krampus_Tests-umbrella.h"; sourceTree = "<group>"; };
-		30BDBFDF96BA67DDC2236DF6C9A5C27F /* Krampus.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Krampus.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		37BF7878DA2BABE6B76F4C2022B9D72D /* Krampus-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Krampus-Info.plist"; sourceTree = "<group>"; };
+		2F467BE8EEB62E028AEF0952D359D887 /* Header+Method.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Header+Method.swift"; path = "Santa/Classes/Model/Header+Method.swift"; sourceTree = "<group>"; };
+		3300D159F4B2B7F51006D372B3B6CA38 /* Krampus.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Krampus.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3A8DF8886109BFBCE160238225ED8450 /* Pods-Krampus_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Krampus_Example-umbrella.h"; sourceTree = "<group>"; };
+		405C88327A4B27418602CFC25CDEB7A0 /* Santa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Santa.debug.xcconfig; sourceTree = "<group>"; };
 		427954D219327C10DA271C1E43747E10 /* Santa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Santa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		433F5686D219498BC54F25694A3FD932 /* Pods-Krampus_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Krampus_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		447A15A4ACB8CCA437DBDA997BC300C6 /* Resource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = Santa/Classes/Resource.swift; sourceTree = "<group>"; };
 		47F09E26C8D7CB84765BE5930776E793 /* Pods-Krampus_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Krampus_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		4865FD1DA2BCA1BE0DC5D24AFEAC1630 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		4B0A6A29D48A90D19646437E1AD22BB8 /* Santa-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Santa-Info.plist"; sourceTree = "<group>"; };
-		4E05E77DD2EFE7480876C98D64CA059E /* Krampus-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Krampus-dummy.m"; sourceTree = "<group>"; };
-		5E448BB8681B39CAD166D6BD3245B2A3 /* Santa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Santa.xcconfig; sourceTree = "<group>"; };
-		6491FC03570780CD628DD000BAEE0B2A /* Krampus-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Krampus-prefix.pch"; sourceTree = "<group>"; };
-		652B638316CB639292D5A49BD1FC4EE0 /* KeycloakAuthorization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeycloakAuthorization.swift; path = Krampus/Classes/KeycloakAuthorization.swift; sourceTree = "<group>"; };
-		69F372E8BA614976F0D26980407EDEE9 /* Santa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Santa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		559DF583F43D1CBA722BD1910B6F4E98 /* Santa-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Santa-dummy.m"; sourceTree = "<group>"; };
+		56421987802781FDD390ADFDF77FF9DA /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = Krampus/Classes/Keychain.swift; sourceTree = "<group>"; };
+		5B290A771F51E9904B09E4204436CA6D /* Authorization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authorization.swift; path = Krampus/Classes/Authorization.swift; sourceTree = "<group>"; };
+		621BD80CFC4B1F8FA1F2180694451D3F /* Santa-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Santa-Info.plist"; sourceTree = "<group>"; };
+		625EE55BE50119997F77ED41B3FD0ED7 /* Krampus.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Krampus.modulemap; sourceTree = "<group>"; };
+		62DE0E666055E752DE1E8B12E6F93884 /* Santa.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Santa.modulemap; sourceTree = "<group>"; };
+		6426754A5AC2173662DD02780FCFBE6C /* Krampus-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Krampus-Info.plist"; sourceTree = "<group>"; };
+		67C18CB6C142D2CEBEF4AA41459D83A7 /* Krampus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Krampus.debug.xcconfig; sourceTree = "<group>"; };
+		69F372E8BA614976F0D26980407EDEE9 /* Santa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Santa.framework; path = Santa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DC79D115BA59CBBBDC39CC76628A6E4 /* Krampus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Krampus.swift; path = Krampus/Classes/Krampus.swift; sourceTree = "<group>"; };
 		70F19769C9AFDD74F70697DE0ABE9C0D /* Pods-Krampus_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Krampus_Example.modulemap"; sourceTree = "<group>"; };
+		77D50B99AAECF1F0DD9AE1A2B45E67D6 /* Krampus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Krampus.release.xcconfig; sourceTree = "<group>"; };
+		7D5AC457088846A8C2C36D61631A4178 /* Webservice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Webservice.swift; path = Santa/Classes/Webservice.swift; sourceTree = "<group>"; };
 		7F1C0912508C3C8825D69A04236418D3 /* Pods-Krampus_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Krampus_Example-frameworks.sh"; sourceTree = "<group>"; };
+		7F5D74546056B467E4F6008EF59B18BE /* DataResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataResource.swift; path = Santa/Classes/Model/DataResource.swift; sourceTree = "<group>"; };
 		82B6F37D56A58DA695EB7E596783A52D /* Pods-Krampus_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Krampus_Example-dummy.m"; sourceTree = "<group>"; };
-		847D91ACE837634E9D1AE1079128A829 /* JWT.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JWT.swift; path = Krampus/Classes/JWT.swift; sourceTree = "<group>"; };
 		875CB88ABBA8C48A5CF657131340B32F /* Pods-Krampus_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Krampus_Tests.modulemap"; sourceTree = "<group>"; };
-		8BFC1105CF07EECF9543666956474439 /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = Krampus/Classes/Keychain.swift; sourceTree = "<group>"; };
-		93EB32B5958359BF893AEB0741F25070 /* Krampus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Krampus.swift; path = Krampus/Classes/Krampus.swift; sourceTree = "<group>"; };
-		941F6976C890F8971A3DD8ECB9CAAE4D /* Santa.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Santa.modulemap; sourceTree = "<group>"; };
-		983009660C0813018ECBBCE7319795BA /* Krampus.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Krampus.modulemap; sourceTree = "<group>"; };
-		9B4850CCB3E5DD0FCD457C9C526C5DBF /* Santa-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Santa-prefix.pch"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		92142942DA12522E835188EEA1AD64D7 /* Santa-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Santa-umbrella.h"; sourceTree = "<group>"; };
+		9AC527E0D302AABC499554E0FC5C05B5 /* Resource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = Santa/Classes/Resource.swift; sourceTree = "<group>"; };
+		9C5E2D7778925F69EC8BEBFD0A113B30 /* Krampus-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Krampus-prefix.pch"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E589150F771960CB40F9D5B8E82657D /* Pods-Krampus_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Krampus_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		A623B15309EBD46CB7E830FD098A345D /* Santa-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Santa-umbrella.h"; sourceTree = "<group>"; };
-		AD802532B8AF72EC749FE1875DB94FB0 /* CredentialsKeychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CredentialsKeychain.swift; path = Krampus/Classes/CredentialsKeychain.swift; sourceTree = "<group>"; };
+		AF837E858B9299A85BA55C988BF2FB15 /* KeycloakAuthorization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeycloakAuthorization.swift; path = Krampus/Classes/KeycloakAuthorization.swift; sourceTree = "<group>"; };
 		B27F77959941E92A4B30CEC0073AF7CD /* Pods-Krampus_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Krampus_Tests-dummy.m"; sourceTree = "<group>"; };
 		B6FAE1462D85AF816F322E6547831600 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		BEE66317A8D01090A77533EE6C7FA801 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		C3496D8FCF31930EA7DFBAFADCBE1F7D /* Pods_Krampus_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Krampus_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C4FA1306E4BFB629D867A31D554815C9 /* Authorization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authorization.swift; path = Krampus/Classes/Authorization.swift; sourceTree = "<group>"; };
-		C7A1E6C50F24F9B9BCA440E460F7D4F5 /* Pods_Krampus_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Krampus_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D00FD7FE06124AB5EE8659FF8A762740 /* KeycloakAuthorizationResources.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeycloakAuthorizationResources.swift; path = Krampus/Classes/KeycloakAuthorizationResources.swift; sourceTree = "<group>"; };
-		D26EBC569D89689C5F1B97F559E03F9B /* Krampus.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Krampus.xcconfig; sourceTree = "<group>"; };
-		DFA66621D5B89B15DDF8D3B47DF42A88 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C006E4ADD66C3CE41C3E19235934BC45 /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Santa/Classes/ImageCache.swift; sourceTree = "<group>"; };
+		C3496D8FCF31930EA7DFBAFADCBE1F7D /* Pods_Krampus_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Krampus_Example.framework; path = "Pods-Krampus_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C67717899215F066906F7AA7ACA5A7F0 /* Krampus-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Krampus-umbrella.h"; sourceTree = "<group>"; };
+		C7A1E6C50F24F9B9BCA440E460F7D4F5 /* Pods_Krampus_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Krampus_Tests.framework; path = "Pods-Krampus_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7CDB80EE1E2760EC6089F26AF6B584B /* DownloadedFilesManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownloadedFilesManager.swift; path = Santa/Classes/Model/Download/DownloadedFilesManager.swift; sourceTree = "<group>"; };
+		C7D12B6BD26E6BD02EE9CDD13EB3745B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		E6592E0F84A3888BE9384217B25EA5D8 /* Pods-Krampus_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Krampus_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		E7CA4F061EF697C709DAECDA57E7426C /* Pods-Krampus_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Krampus_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F3ECA9244D79319E74A940B8A2AB3738 /* Krampus-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Krampus-umbrella.h"; sourceTree = "<group>"; };
-		FC207A04E6B3420112AF6D0AFA222348 /* KeychainCredentials.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainCredentials.swift; path = Krampus/Classes/KeychainCredentials.swift; sourceTree = "<group>"; };
+		EABE0979764308AF0FD63AAAD33D4F6A /* Santa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Santa.release.xcconfig; sourceTree = "<group>"; };
+		F9E30630AC35A7626E8F4C8A2251DA7B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		FE8D622E4D0CD5094A1509F53BC1140C /* CredentialsKeychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CredentialsKeychain.swift; path = Krampus/Classes/CredentialsKeychain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0E9CF78A870CAD47B50946B584F0071B /* Frameworks */ = {
+		13E88CF68211B98BEAF9AF0F18A35343 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				114E04F519532772C374A33FA0BAC85B /* Foundation.framework in Frameworks */,
-				D7B47BAF17C19D1696DC4064D8236CCF /* UIKit.framework in Frameworks */,
+				626C7643B7CE70C6CD0A02CD009FECC9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1DDF68E83DBCFFDA4282348C94D1096C /* Frameworks */ = {
+		1EE4B57FB42E2F44A0A853676DAB9EDF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53A9A16FE1DDC15233743783DF3C60E7 /* Foundation.framework in Frameworks */,
+				45B286A53F34207F136190A750950D53 /* Foundation.framework in Frameworks */,
+				8B68329F3F1E76654D5D423EEBFE8D5A /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C38DBE6D988D200D83B117B4D48250BE /* Frameworks */ = {
+		88121A6AD396981C0814CCA06AF662DA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0858ABFE35FE73DECE47E21177813ACF /* Foundation.framework in Frameworks */,
-				93ED691446B53C280394668FE8433242 /* Santa.framework in Frameworks */,
+				29D1D4520E2DB6428E1668D0BE0F3FB4 /* Foundation.framework in Frameworks */,
+				9BD687FB09808C78602BB9675FCF1EA1 /* Santa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E67082C47FFDC3B01D6C50C324B74267 /* Frameworks */ = {
+		E13A63E0179381C88C05B10B19A77AB7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86890A6EB83609F1C5F8E897648177BE /* Foundation.framework in Frameworks */,
+				1CA296B419D26114FE07690183B0C2BD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,14 +187,19 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		2202EF1F2BEAB37203B7645BEE1045B7 /* Pod */ = {
+		1F6535521C8FDA9184987914F9B76876 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				30BDBFDF96BA67DDC2236DF6C9A5C27F /* Krampus.podspec */,
-				DFA66621D5B89B15DDF8D3B47DF42A88 /* LICENSE */,
-				BEE66317A8D01090A77533EE6C7FA801 /* README.md */,
+				625EE55BE50119997F77ED41B3FD0ED7 /* Krampus.modulemap */,
+				27A031765D986B417BA1997C797C7FEC /* Krampus-dummy.m */,
+				6426754A5AC2173662DD02780FCFBE6C /* Krampus-Info.plist */,
+				9C5E2D7778925F69EC8BEBFD0A113B30 /* Krampus-prefix.pch */,
+				C67717899215F066906F7AA7ACA5A7F0 /* Krampus-umbrella.h */,
+				67C18CB6C142D2CEBEF4AA41459D83A7 /* Krampus.debug.xcconfig */,
+				77D50B99AAECF1F0DD9AE1A2B45E67D6 /* Krampus.release.xcconfig */,
 			);
-			name = Pod;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Krampus";
 			sourceTree = "<group>";
 		};
 		2D52356EAFC06418161E223D1267D1AA /* Pods-Krampus_Example */ = {
@@ -206,6 +219,29 @@
 			path = "Target Support Files/Pods-Krampus_Example";
 			sourceTree = "<group>";
 		};
+		4342242E8BE3B719AD9BF830C6A88784 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A43BC1052F6D539EB23B23D46748937B /* Santa */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		64016E9C22F05ACB8B91C6315AED7AEF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				62DE0E666055E752DE1E8B12E6F93884 /* Santa.modulemap */,
+				559DF583F43D1CBA722BD1910B6F4E98 /* Santa-dummy.m */,
+				621BD80CFC4B1F8FA1F2180694451D3F /* Santa-Info.plist */,
+				2E7951EF6D0E6E6A8869B666EA7BB608 /* Santa-prefix.pch */,
+				92142942DA12522E835188EEA1AD64D7 /* Santa-umbrella.h */,
+				405C88327A4B27418602CFC25CDEB7A0 /* Santa.debug.xcconfig */,
+				EABE0979764308AF0FD63AAAD33D4F6A /* Santa.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Santa";
+			sourceTree = "<group>";
+		};
 		65B11584598764FCA5AB36A2EEDCC7AE /* Pods-Krampus_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,78 +258,56 @@
 			path = "Target Support Files/Pods-Krampus_Tests";
 			sourceTree = "<group>";
 		};
-		6A005C32F4A2A2FE197F0AA6D41CC8DC /* Santa */ = {
+		74E0BA0D8976843DC77CA88ACA6B3E9C /* Krampus */ = {
 			isa = PBXGroup;
 			children = (
-				0A784E51C85713D07B89DC1BE0D980CD /* DownloadedFilesManager.swift */,
-				10D77DED0385DBCA58866C3909FC9C7F /* ImageCache.swift */,
-				447A15A4ACB8CCA437DBDA997BC300C6 /* Resource.swift */,
-				168136E354719FC0B37E77FDC57B1C24 /* Webservice.swift */,
-				99BC6928864180A4257EE417DA47AC9C /* Support Files */,
-			);
-			path = Santa;
-			sourceTree = "<group>";
-		};
-		7B0DC236ECF890E2865C2FFF53AB391C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6A005C32F4A2A2FE197F0AA6D41CC8DC /* Santa */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		7BD4D627307A966153DC447285F7FEE0 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				AD7908A1207158D4DD991BF3F120682D /* Krampus */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		99BC6928864180A4257EE417DA47AC9C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				941F6976C890F8971A3DD8ECB9CAAE4D /* Santa.modulemap */,
-				5E448BB8681B39CAD166D6BD3245B2A3 /* Santa.xcconfig */,
-				05207D62AE4AB8664ECF98E27C4071F3 /* Santa-dummy.m */,
-				4B0A6A29D48A90D19646437E1AD22BB8 /* Santa-Info.plist */,
-				9B4850CCB3E5DD0FCD457C9C526C5DBF /* Santa-prefix.pch */,
-				A623B15309EBD46CB7E830FD098A345D /* Santa-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Santa";
-			sourceTree = "<group>";
-		};
-		AD7908A1207158D4DD991BF3F120682D /* Krampus */ = {
-			isa = PBXGroup;
-			children = (
-				C4FA1306E4BFB629D867A31D554815C9 /* Authorization.swift */,
-				847D91ACE837634E9D1AE1079128A829 /* JWT.swift */,
-				8BFC1105CF07EECF9543666956474439 /* Keychain.swift */,
-				FC207A04E6B3420112AF6D0AFA222348 /* KeychainCredentials.swift */,
-				652B638316CB639292D5A49BD1FC4EE0 /* KeycloakAuthorization.swift */,
-				D00FD7FE06124AB5EE8659FF8A762740 /* KeycloakAuthorizationResources.swift */,
-				AD802532B8AF72EC749FE1875DB94FB0 /* CredentialsKeychain.swift */,
-				93EB32B5958359BF893AEB0741F25070 /* Krampus.swift */,
-				2202EF1F2BEAB37203B7645BEE1045B7 /* Pod */,
-				B3E68289F770EBEC99F6A541653A13D3 /* Support Files */,
+				5B290A771F51E9904B09E4204436CA6D /* Authorization.swift */,
+				FE8D622E4D0CD5094A1509F53BC1140C /* CredentialsKeychain.swift */,
+				1E633D1C33DA5D72E21DEE80AD43260D /* JWT.swift */,
+				56421987802781FDD390ADFDF77FF9DA /* Keychain.swift */,
+				208A3B74CA0C91238F4442AE0AABA45F /* KeychainCredentials.swift */,
+				AF837E858B9299A85BA55C988BF2FB15 /* KeycloakAuthorization.swift */,
+				2DB9EDD69369E1C5B07DBE4C1F979953 /* KeycloakAuthorizationResources.swift */,
+				6DC79D115BA59CBBBDC39CC76628A6E4 /* Krampus.swift */,
+				ABF0176DCAA232D8B709369AB36A91F4 /* Pod */,
+				1F6535521C8FDA9184987914F9B76876 /* Support Files */,
 			);
 			name = Krampus;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		B3E68289F770EBEC99F6A541653A13D3 /* Support Files */ = {
+		7BD4D627307A966153DC447285F7FEE0 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				983009660C0813018ECBBCE7319795BA /* Krampus.modulemap */,
-				D26EBC569D89689C5F1B97F559E03F9B /* Krampus.xcconfig */,
-				4E05E77DD2EFE7480876C98D64CA059E /* Krampus-dummy.m */,
-				37BF7878DA2BABE6B76F4C2022B9D72D /* Krampus-Info.plist */,
-				6491FC03570780CD628DD000BAEE0B2A /* Krampus-prefix.pch */,
-				F3ECA9244D79319E74A940B8A2AB3738 /* Krampus-umbrella.h */,
+				74E0BA0D8976843DC77CA88ACA6B3E9C /* Krampus */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Krampus";
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		A43BC1052F6D539EB23B23D46748937B /* Santa */ = {
+			isa = PBXGroup;
+			children = (
+				7F5D74546056B467E4F6008EF59B18BE /* DataResource.swift */,
+				C7CDB80EE1E2760EC6089F26AF6B584B /* DownloadedFilesManager.swift */,
+				15701E3144C329A9FDD89DCC0E64ACC0 /* DownloadResource.swift */,
+				2F467BE8EEB62E028AEF0952D359D887 /* Header+Method.swift */,
+				C006E4ADD66C3CE41C3E19235934BC45 /* ImageCache.swift */,
+				9AC527E0D302AABC499554E0FC5C05B5 /* Resource.swift */,
+				7D5AC457088846A8C2C36D61631A4178 /* Webservice.swift */,
+				64016E9C22F05ACB8B91C6315AED7AEF /* Support Files */,
+			);
+			name = Santa;
+			path = Santa;
+			sourceTree = "<group>";
+		};
+		ABF0176DCAA232D8B709369AB36A91F4 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				3300D159F4B2B7F51006D372B3B6CA38 /* Krampus.podspec */,
+				C7D12B6BD26E6BD02EE9CDD13EB3745B /* LICENSE */,
+				F9E30630AC35A7626E8F4C8A2251DA7B /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		B4843F8D47D285FCA3D57BA98971C2B6 /* Frameworks */ = {
@@ -311,7 +325,7 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				7BD4D627307A966153DC447285F7FEE0 /* Development Pods */,
 				B4843F8D47D285FCA3D57BA98971C2B6 /* Frameworks */,
-				7B0DC236ECF890E2865C2FFF53AB391C /* Pods */,
+				4342242E8BE3B719AD9BF830C6A88784 /* Pods */,
 				0168C19639559D3F2FEDEACB058D5946 /* Products */,
 				0BBE05B1AC52E18E1A4EB18297E20FD6 /* Targets Support Files */,
 			);
@@ -329,35 +343,35 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		07AC533ADE52A33B7C10DF772CE04FB2 /* Headers */ = {
+		7158D51365F75367BF8ED091520AC626 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5086A0281954CC96EE20F442C562FE67 /* Pods-Krampus_Example-umbrella.h in Headers */,
+				1451FAB2D651B9B49FDE34B7EC17B610 /* Santa-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0D0ED501B0D10DE4E711BC03396280AA /* Headers */ = {
+		B192CFFD0112E8D9A17BFFC645C9EAC6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71CC33D79906A479DE74B8366E3A5A5C /* Pods-Krampus_Tests-umbrella.h in Headers */,
+				3C261BEBCE3DE4779321FD9E40A96641 /* Pods-Krampus_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3C7E577F3AEF76BE4D4B7E2AC885FF50 /* Headers */ = {
+		E84DB72257F351C11F17115B7F31D3FB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8788CAA6578EE323B562B319140EFEDE /* Santa-umbrella.h in Headers */,
+				7EA04E14C856AA5CA95B899FD98C0901 /* Krampus-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BD60D532FCA67F94DBD7FA3374337ABF /* Headers */ = {
+		F4DF5A1557BECB33C3AF3BD9A3F12214 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5FD6B8224F0EF365261B513A8E0F002 /* Krampus-umbrella.h in Headers */,
+				6FD1ABF48DC493FD2CF41758D08DE7FB /* Pods-Krampus_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,12 +380,12 @@
 /* Begin PBXNativeTarget section */
 		3CCFFA8FCB87C5ABC9A351C1E003C879 /* Santa */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A2987DDA96462BA471FB7407891A4189 /* Build configuration list for PBXNativeTarget "Santa" */;
+			buildConfigurationList = 263F6B41D5AB58F5049D69BA0AD63C32 /* Build configuration list for PBXNativeTarget "Santa" */;
 			buildPhases = (
-				3C7E577F3AEF76BE4D4B7E2AC885FF50 /* Headers */,
-				EFEB49A52CBB0256406AAA392B4975EC /* Sources */,
-				0E9CF78A870CAD47B50946B584F0071B /* Frameworks */,
-				7B166C825E5E22C8B584EDAC7D339D44 /* Resources */,
+				7158D51365F75367BF8ED091520AC626 /* Headers */,
+				2AC549FD65739742CA1092D1FB246FE0 /* Sources */,
+				1EE4B57FB42E2F44A0A853676DAB9EDF /* Frameworks */,
+				211AB4D164F4A2CCC73AB2DABB3C3368 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -384,18 +398,18 @@
 		};
 		9B75869FFBF8FC9BA1EBEAF238AD7080 /* Pods-Krampus_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8D210EF2639985BFF466E0C7188A9576 /* Build configuration list for PBXNativeTarget "Pods-Krampus_Example" */;
+			buildConfigurationList = 77889A1B4C6190EECCBCDD415C1BC61B /* Build configuration list for PBXNativeTarget "Pods-Krampus_Example" */;
 			buildPhases = (
-				07AC533ADE52A33B7C10DF772CE04FB2 /* Headers */,
-				FC48503F914E5122EAA3C1F7CBBA6250 /* Sources */,
-				E67082C47FFDC3B01D6C50C324B74267 /* Frameworks */,
-				EFC6AC081AB77BF880B4B66C1776D56B /* Resources */,
+				B192CFFD0112E8D9A17BFFC645C9EAC6 /* Headers */,
+				68C377CF4833C147E50049D4F06C66EC /* Sources */,
+				E13A63E0179381C88C05B10B19A77AB7 /* Frameworks */,
+				531640B2DC6D0E7E3FFB0D5EECFE5ECD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8C7B87A87064D26E9B823DD420C23359 /* PBXTargetDependency */,
-				8FF70A376215484A1C9795E339E62F34 /* PBXTargetDependency */,
+				777F92EFBB67E954ABC8CDFC1F478FC6 /* PBXTargetDependency */,
+				2B4677223CE55947885A12AB94DB7058 /* PBXTargetDependency */,
 			);
 			name = "Pods-Krampus_Example";
 			productName = "Pods-Krampus_Example";
@@ -404,17 +418,17 @@
 		};
 		AAC78FD1D8A31D0DF58918149A5501E0 /* Pods-Krampus_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F48E7EE404F42F68CC9A9C1ABD5106C7 /* Build configuration list for PBXNativeTarget "Pods-Krampus_Tests" */;
+			buildConfigurationList = 2D41784A92458191AB67D4C107570DC1 /* Build configuration list for PBXNativeTarget "Pods-Krampus_Tests" */;
 			buildPhases = (
-				0D0ED501B0D10DE4E711BC03396280AA /* Headers */,
-				DBA9F571110978D4C701DCC874AAEEFF /* Sources */,
-				1DDF68E83DBCFFDA4282348C94D1096C /* Frameworks */,
-				92722544F424CAEECDC57BC855257745 /* Resources */,
+				F4DF5A1557BECB33C3AF3BD9A3F12214 /* Headers */,
+				F3C740AF93DAD6B784B54DC77D5A8891 /* Sources */,
+				13E88CF68211B98BEAF9AF0F18A35343 /* Frameworks */,
+				36CE81A9B874E687C2E521F495BFF840 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A36AE8D40071073D5625243CD39C3765 /* PBXTargetDependency */,
+				28FCF13F3769DBD2709925D178717A46 /* PBXTargetDependency */,
 			);
 			name = "Pods-Krampus_Tests";
 			productName = "Pods-Krampus_Tests";
@@ -423,17 +437,17 @@
 		};
 		F16F690E6A2DA0A5043EFDD39DA9D104 /* Krampus */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 25A46135D7E41F63551A10C72F08A72B /* Build configuration list for PBXNativeTarget "Krampus" */;
+			buildConfigurationList = 0C904BB9A9E92511F31B85F1BE51552C /* Build configuration list for PBXNativeTarget "Krampus" */;
 			buildPhases = (
-				BD60D532FCA67F94DBD7FA3374337ABF /* Headers */,
-				664B3A4EB0ECA99DED22BAFBF7D8BC14 /* Sources */,
-				C38DBE6D988D200D83B117B4D48250BE /* Frameworks */,
-				595CD727E69F90BF2CDA2D587EC61938 /* Resources */,
+				E84DB72257F351C11F17115B7F31D3FB /* Headers */,
+				91F2D2C0B0BEEDDC08C10C2E1A5D3744 /* Sources */,
+				88121A6AD396981C0814CCA06AF662DA /* Frameworks */,
+				9FFE78DDAF7EFDA357F1F4603581CE28 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9D388222DFAE10EC5A1C7EB19B1949B8 /* PBXTargetDependency */,
+				8FCB631B350728F490CFB063DC3F5B03 /* PBXTargetDependency */,
 			);
 			name = Krampus;
 			productName = Krampus;
@@ -471,28 +485,28 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		595CD727E69F90BF2CDA2D587EC61938 /* Resources */ = {
+		211AB4D164F4A2CCC73AB2DABB3C3368 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B166C825E5E22C8B584EDAC7D339D44 /* Resources */ = {
+		36CE81A9B874E687C2E521F495BFF840 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92722544F424CAEECDC57BC855257745 /* Resources */ = {
+		531640B2DC6D0E7E3FFB0D5EECFE5ECD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EFC6AC081AB77BF880B4B66C1776D56B /* Resources */ = {
+		9FFE78DDAF7EFDA357F1F4603581CE28 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -502,83 +516,86 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		664B3A4EB0ECA99DED22BAFBF7D8BC14 /* Sources */ = {
+		2AC549FD65739742CA1092D1FB246FE0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A85C7E8CF907415FEA18EA0B74B3833 /* Authorization.swift in Sources */,
-				D91A1AE0C0A6E4DB4CD4C1DBC0346B3F /* JWT.swift in Sources */,
-				FA49706A3E3B97AE930183E3669C422E /* Keychain.swift in Sources */,
-				F9EB761497871279F5D5536E91E20921 /* KeychainCredentials.swift in Sources */,
-				5D826DF531260474F612FF55E3F4C9C4 /* KeycloakAuthorization.swift in Sources */,
-				2ADD981BCB409078868CA6CAC8AD5781 /* KeycloakAuthorizationResources.swift in Sources */,
-				F663028D7C660604666EBC31710A7EFF /* CredentialsKeychain.swift in Sources */,
-				B6FF30ACD690C7FD79E24C428F79E434 /* Krampus-dummy.m in Sources */,
-				4EF7EFD853BA4764D12CE4C3783B8886 /* Krampus.swift in Sources */,
+				A33EE2DB36BB2C93AABEB68BF8890BB6 /* DataResource.swift in Sources */,
+				F554CCE1CB87291CA353B1C815C77E92 /* DownloadedFilesManager.swift in Sources */,
+				2165757087C034413773F9199D0F67E6 /* DownloadResource.swift in Sources */,
+				44F0B3B78288B35365E650CB2C53A8DB /* Header+Method.swift in Sources */,
+				870759CC1B7347E2D40B7886A7E2A525 /* ImageCache.swift in Sources */,
+				3A9C5E1F26C0AC38A29B0765281BBE24 /* Resource.swift in Sources */,
+				71980A2EC31B56FE118BA00D173B12F7 /* Santa-dummy.m in Sources */,
+				11B37AE961F1EA3AD154A2E8BA07BA4A /* Webservice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DBA9F571110978D4C701DCC874AAEEFF /* Sources */ = {
+		68C377CF4833C147E50049D4F06C66EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9F77EF99C2984BD8860E470222D73FD /* Pods-Krampus_Tests-dummy.m in Sources */,
+				52B4F629433C054ABEA35C4268D972A3 /* Pods-Krampus_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EFEB49A52CBB0256406AAA392B4975EC /* Sources */ = {
+		91F2D2C0B0BEEDDC08C10C2E1A5D3744 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B47530D9BB2B6E4B9570F3D01710DA9D /* DownloadedFilesManager.swift in Sources */,
-				96E0C7CDE0FD480A64402F7F2F1A83A4 /* ImageCache.swift in Sources */,
-				360E0F718FACFE796EE4466AF99148D8 /* Resource.swift in Sources */,
-				407033B873F6118B2A5871EAB423EDF8 /* Santa-dummy.m in Sources */,
-				3DFAE9AFB1AA8C25967AD92FAB2940F7 /* Webservice.swift in Sources */,
+				0460FF23FE4512C0897A76863F647AA6 /* Authorization.swift in Sources */,
+				F7370D60F0CAEC6D719083BCF5E1FF6E /* CredentialsKeychain.swift in Sources */,
+				A534439AB040BAC912FBACA972632092 /* JWT.swift in Sources */,
+				BA89E6E34AEB424FDA5EA8CCFDB3BC29 /* Keychain.swift in Sources */,
+				5895D10FD7E7A0EEABE044574E56030F /* KeychainCredentials.swift in Sources */,
+				BE26CBC0D54913BB95D6254030655D7A /* KeycloakAuthorization.swift in Sources */,
+				728FE684135D20AC583EB01A75C3DA39 /* KeycloakAuthorizationResources.swift in Sources */,
+				19FC0A7F873655B3446818607E0485CF /* Krampus-dummy.m in Sources */,
+				F106C458F8C97D511E5515C5AD75C923 /* Krampus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FC48503F914E5122EAA3C1F7CBBA6250 /* Sources */ = {
+		F3C740AF93DAD6B784B54DC77D5A8891 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90937FC7A1633377DAAFCC80CF8055E2 /* Pods-Krampus_Example-dummy.m in Sources */,
+				E6F2483AFC3E6B39B1DFBAC3E4939B6A /* Pods-Krampus_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8C7B87A87064D26E9B823DD420C23359 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Krampus;
-			target = F16F690E6A2DA0A5043EFDD39DA9D104 /* Krampus */;
-			targetProxy = F98ED6184E1544D066FBB5CC3F618A2D /* PBXContainerItemProxy */;
-		};
-		8FF70A376215484A1C9795E339E62F34 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Santa;
-			target = 3CCFFA8FCB87C5ABC9A351C1E003C879 /* Santa */;
-			targetProxy = A7E9D00B8B6EC93DF4C86E87A1C70BF8 /* PBXContainerItemProxy */;
-		};
-		9D388222DFAE10EC5A1C7EB19B1949B8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Santa;
-			target = 3CCFFA8FCB87C5ABC9A351C1E003C879 /* Santa */;
-			targetProxy = 36C0B0E2D9B742108CBDF39D4CA3082B /* PBXContainerItemProxy */;
-		};
-		A36AE8D40071073D5625243CD39C3765 /* PBXTargetDependency */ = {
+		28FCF13F3769DBD2709925D178717A46 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Krampus_Example";
 			target = 9B75869FFBF8FC9BA1EBEAF238AD7080 /* Pods-Krampus_Example */;
-			targetProxy = 96DBF2F5B0514747BEAEEC7106E1B105 /* PBXContainerItemProxy */;
+			targetProxy = DD22ED85E283C627379BC3C02C69D2E2 /* PBXContainerItemProxy */;
+		};
+		2B4677223CE55947885A12AB94DB7058 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Santa;
+			target = 3CCFFA8FCB87C5ABC9A351C1E003C879 /* Santa */;
+			targetProxy = 5514CDB621BCDB3389E56824F1FCDB3E /* PBXContainerItemProxy */;
+		};
+		777F92EFBB67E954ABC8CDFC1F478FC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Krampus;
+			target = F16F690E6A2DA0A5043EFDD39DA9D104 /* Krampus */;
+			targetProxy = A057B3420C545EAE875959FFF6143850 /* PBXContainerItemProxy */;
+		};
+		8FCB631B350728F490CFB063DC3F5B03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Santa;
+			target = 3CCFFA8FCB87C5ABC9A351C1E003C879 /* Santa */;
+			targetProxy = CADF08D087DC444D0C6B495DEDEB4D76 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		07B474BA7EE438A2AA4C3535D5CAE106 /* Release */ = {
+		06681CB5A409FA898FB34E69BBDF1A38 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E448BB8681B39CAD166D6BD3245B2A3 /* Santa.xcconfig */;
+			baseConfigurationReference = EABE0979764308AF0FD63AAAD33D4F6A /* Santa.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -608,9 +625,40 @@
 			};
 			name = Release;
 		};
-		45B42B4F688B146CE5FFEBAC51F3CCCA /* Release */ = {
+		0F9452948B24B0A6D37D3C986940C904 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0BB82E2455B97E86128719D05BAE9D61 /* Pods-Krampus_Example.release.xcconfig */;
+			baseConfigurationReference = 405C88327A4B27418602CFC25CDEB7A0 /* Santa.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Santa/Santa-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Santa/Santa-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Santa/Santa.modulemap";
+				PRODUCT_MODULE_NAME = Santa;
+				PRODUCT_NAME = Santa;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		26BCF1C14CD54B1EF2680F234DF364F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 433F5686D219498BC54F25694A3FD932 /* Pods-Krampus_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -636,15 +684,14 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		50D13EAE77BF2631829D2D3C8EF47166 /* Debug */ = {
+		658D4F8632F6E7F6653FF380A2E810C2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E589150F771960CB40F9D5B8E82657D /* Pods-Krampus_Tests.debug.xcconfig */;
+			baseConfigurationReference = 064EBEC13ECF86614A116D120435DD8E /* Pods-Krampus_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -670,45 +717,15 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		89A1B06EC43136567DDB3937E8E29436 /* Debug */ = {
+		6E004CB30AD4573C177C6740BEFB5AA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E448BB8681B39CAD166D6BD3245B2A3 /* Santa.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Santa/Santa-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Santa/Santa-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Santa/Santa.modulemap";
-				PRODUCT_MODULE_NAME = Santa;
-				PRODUCT_NAME = Santa;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		99C9823C50880E4B51CA7484CD74BD7E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D26EBC569D89689C5F1B97F559E03F9B /* Krampus.xcconfig */;
+			baseConfigurationReference = 67C18CB6C142D2CEBEF4AA41459D83A7 /* Krampus.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -732,15 +749,14 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		9B418455AD8CAEF72D1CB6D47E5197FE /* Debug */ = {
+		95656386972D8F36EB73A60577E2D72E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 433F5686D219498BC54F25694A3FD932 /* Pods-Krampus_Example.debug.xcconfig */;
+			baseConfigurationReference = 9E589150F771960CB40F9D5B8E82657D /* Pods-Krampus_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -752,12 +768,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Krampus_Example/Pods-Krampus_Example-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Krampus_Tests/Pods-Krampus_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Krampus_Example/Pods-Krampus_Example.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Krampus_Tests/Pods-Krampus_Tests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -824,7 +840,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -894,9 +911,43 @@
 			};
 			name = Debug;
 		};
-		C71B69D545BD3B432A76A624F62D2AEE /* Debug */ = {
+		BA8B83CDBD9D45D6CC43B1A79D240D8C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D26EBC569D89689C5F1B97F559E03F9B /* Krampus.xcconfig */;
+			baseConfigurationReference = 0BB82E2455B97E86128719D05BAE9D61 /* Pods-Krampus_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Krampus_Example/Pods-Krampus_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Krampus_Example/Pods-Krampus_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F2F19235854B114EA83DBF17E0EADCE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77D50B99AAECF1F0DD9AE1A2B45E67D6 /* Krampus.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -920,39 +971,6 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		EE9621B127C5880F7EF72EEB2C3ADC88 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 064EBEC13ECF86614A116D120435DD8E /* Pods-Krampus_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Krampus_Tests/Pods-Krampus_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Krampus_Tests/Pods-Krampus_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -962,11 +980,29 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		25A46135D7E41F63551A10C72F08A72B /* Build configuration list for PBXNativeTarget "Krampus" */ = {
+		0C904BB9A9E92511F31B85F1BE51552C /* Build configuration list for PBXNativeTarget "Krampus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C71B69D545BD3B432A76A624F62D2AEE /* Debug */,
-				99C9823C50880E4B51CA7484CD74BD7E /* Release */,
+				6E004CB30AD4573C177C6740BEFB5AA9 /* Debug */,
+				F2F19235854B114EA83DBF17E0EADCE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		263F6B41D5AB58F5049D69BA0AD63C32 /* Build configuration list for PBXNativeTarget "Santa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F9452948B24B0A6D37D3C986940C904 /* Debug */,
+				06681CB5A409FA898FB34E69BBDF1A38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D41784A92458191AB67D4C107570DC1 /* Build configuration list for PBXNativeTarget "Pods-Krampus_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95656386972D8F36EB73A60577E2D72E /* Debug */,
+				658D4F8632F6E7F6653FF380A2E810C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -980,29 +1016,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8D210EF2639985BFF466E0C7188A9576 /* Build configuration list for PBXNativeTarget "Pods-Krampus_Example" */ = {
+		77889A1B4C6190EECCBCDD415C1BC61B /* Build configuration list for PBXNativeTarget "Pods-Krampus_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9B418455AD8CAEF72D1CB6D47E5197FE /* Debug */,
-				45B42B4F688B146CE5FFEBAC51F3CCCA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A2987DDA96462BA471FB7407891A4189 /* Build configuration list for PBXNativeTarget "Santa" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				89A1B06EC43136567DDB3937E8E29436 /* Debug */,
-				07B474BA7EE438A2AA4C3535D5CAE106 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F48E7EE404F42F68CC9A9C1ABD5106C7 /* Build configuration list for PBXNativeTarget "Pods-Krampus_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				50D13EAE77BF2631829D2D3C8EF47166 /* Debug */,
-				EE9621B127C5880F7EF72EEB2C3ADC88 /* Release */,
+				26BCF1C14CD54B1EF2680F234DF364F8 /* Debug */,
+				BA8B83CDBD9D45D6CC43B1A79D240D8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

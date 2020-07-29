@@ -51,6 +51,7 @@ public protocol WebserviceDelegate: class {
 
 public protocol Webservice {
     var downloadDelegate: WebserviceDownloadTaskDelegate? { get set }
+    var backgroundDownloadCompletionHandler: (() -> Void)? { get set }
     var delegate: WebserviceDelegate? { get set }
     var authorization: RequestAuthorization? { get set }
 
@@ -60,10 +61,14 @@ public protocol Webservice {
     func cancelTask(for uuid: UUID)
     func isTaskActive(for uuid: UUID) -> Bool
     func isTaskActive(for url: URL) -> Bool
+    func isTaskActive(forFileName fileName: String) -> Bool
+    func setDownloadDelegate(_ delegate: WebserviceDownloadTaskDelegate?)
+    func setBackgroundDownloadCompletionhandler(_ handler: @escaping () -> Void)
 }
 
 public final class ImplWebservice: NSObject, Webservice {
     public weak var downloadDelegate: WebserviceDownloadTaskDelegate?
+    public var backgroundDownloadCompletionHandler: (() -> Void)?
     public weak var delegate: WebserviceDelegate?
     public var authorization: RequestAuthorization?
 
@@ -76,6 +81,18 @@ public final class ImplWebservice: NSObject, Webservice {
             delegate: self,
             delegateQueue: nil)
     }()
+
+    public func setDownloadDelegate(_ delegate: WebserviceDownloadTaskDelegate?) {
+        self.downloadDelegate = delegate
+    }
+
+    public func setDelegate(_ delegate: WebserviceDelegate?) {
+        self.delegate = delegate
+    }
+
+    public func setBackgroundDownloadCompletionhandler(_ handler: @escaping () -> Void) {
+        self.backgroundDownloadCompletionHandler = handler
+    }
 
     /// @param completion: Both arguments (data and error) may be nil (for example, when a resource gets deleted)
     public func load<A>(resource: DataResource<A>, completion: @escaping (A?, Error?) -> Void) {
@@ -132,6 +149,10 @@ public final class ImplWebservice: NSObject, Webservice {
         }
 
         return false
+    }
+
+    public func isTaskActive(forFileName fileName: String) -> Bool {
+        return fileNameForDownloadTasks.values.contains(fileName)
     }
 
     public func reset() {
@@ -275,7 +296,7 @@ extension ImplWebservice: URLSessionDownloadDelegate {
         _ session: URLSession,
         downloadTask: URLSessionDownloadTask,
         didFinishDownloadingTo location: URL) {
-        guard let fileName = fileNameForDownloadTasks[downloadTask.taskIdentifier] else {
+        guard let fileName = fileNameForDownloadTasks.removeValue(forKey: downloadTask.taskIdentifier) else {
             assertionFailure("Unable to get filename for download task")
             return
         }
@@ -314,14 +335,33 @@ extension ImplWebservice: URLSessionDownloadDelegate {
             downloadDelegate?.webservice(self, didErrorDownload: url.absoluteString, with: error, forFileName: fileName)
         }
     }
+
+    public func urlSessionDidFinishEvents(forBackgroundURLSession session: URLSession) {
+        DispatchQueue.main.async {
+            debugPrint("Background downloads finished")
+            self.backgroundDownloadCompletionHandler?()
+        }
+    }
 }
 
 public final class MockWebservice: Webservice {
     public weak var downloadDelegate: WebserviceDownloadTaskDelegate?
+    public var backgroundDownloadCompletionHandler: (() -> Void)?
     public weak var delegate: WebserviceDelegate?
     /// Will not be used with the mocked webservice
     public var authorization: RequestAuthorization?
     public var mocksForUrl = [String: (data: Data?, error: Error?)]()
+
+    public init() {
+    }
+
+    public func setDownloadDelegate(_ delegate: WebserviceDownloadTaskDelegate?) {
+        self.downloadDelegate = delegate
+    }
+
+    public func setBackgroundDownloadCompletionhandler(_ handler: @escaping () -> Void) {
+        self.backgroundDownloadCompletionHandler = handler
+    }
 
     public func load(resource: DownloadResource, onPreparationError: @escaping (Error) -> Void) {
     }
@@ -349,6 +389,10 @@ public final class MockWebservice: Webservice {
     }
 
     public func isTaskActive(for url: URL) -> Bool {
+        return true
+    }
+
+    public func isTaskActive(forFileName fileName: String) -> Bool {
         return true
     }
 }

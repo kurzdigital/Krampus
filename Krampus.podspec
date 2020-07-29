@@ -18,5 +18,5 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Krampus/Classes/**/*'
   
-  s.dependency 'Santa', '~> 0.4'
+  s.dependency 'Santa', '~> 0.5'
 end

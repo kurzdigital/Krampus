@@ -4,6 +4,8 @@
 [![License](https://img.shields.io/cocoapods/l/Santa.svg?style=flat)](https://cocoapods.org/pods/Santa)
 [![Platform](https://img.shields.io/cocoapods/p/Santa.svg?style=flat)](https://cocoapods.org/pods/Santa)
 
+<div align="center"><img src="https://github.com/kurzdigital/Santa/blob/master/Santa.png" width="400" /></div>
+
 A resource based network communication lib inspired by the first episode of the [Swift Talk](https://talk.objc.io/episodes/S01E1-tiny-networking-library) webshow.
 It decouples the definition of resources and the required network stack to make the actual network call.
 
@@ -73,6 +75,7 @@ pod 'Santa'
 * Write more tests
 * Extend mocked webservice to enable network independent tests (Download tasks, etc.)
 * Add usage description
+* Implement Upload Tasks
 
 ## Author
 

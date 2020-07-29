@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct DownloadedFilesManager {
-    static func moveItemToDocuments(at location: URL, fileName: String) throws -> URL {
+public struct DownloadedFilesManager {
+    public static func moveItemToDocuments(at location: URL, fileName: String) throws -> URL {
         let destinationUrl = try fileUrl(for: fileName)
         // Always override existing files
         if FileManager.default.fileExists(atPath: destinationUrl.path) {
@@ -18,14 +18,23 @@ struct DownloadedFilesManager {
         return destinationUrl
     }
 
-    static func removeItem(fileName: String) throws {
+    public static func removeItem(fileName: String) throws {
         let destinationUrl = try fileUrl(for: fileName)
         if FileManager.default.fileExists(atPath: destinationUrl.path) {
             try FileManager.default.removeItem(at: destinationUrl)
         }
     }
 
-    static func fileUrl(for fileName: String) throws -> URL {
+    public static func exists(fileName: String) -> Bool {
+        do {
+            let destinationUrl = try fileUrl(for: fileName)
+            return FileManager.default.fileExists(atPath: destinationUrl.path)
+        } catch {
+            return false
+        }
+    }
+
+    public static func fileUrl(for fileName: String) throws -> URL {
         let destinationFolder = try documentsUrl()
         return destinationFolder.appendingPathComponent(fileName)
     }
