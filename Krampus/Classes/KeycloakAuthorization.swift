@@ -151,15 +151,19 @@ extension KeycloakAuthorization {
     fileprivate func loadCredentials(resource: DataResource<Credentials>, completion: @escaping (Result<KeychainCredentials, Error>) -> Void) {
         webservice.load(resource: resource) { credentials, error in
             if let error = error {
-                if let error = error as? NetworkError {
-                    switch error {
+                if let networkError = error as? NetworkError {
+                    switch networkError {
                     case .failedAuthorization,
                          .noInternetConnectivity:
                         // pass through to parent-errorhandler
                         completion(Result.failure(error))
                         return
-                    case .badResponseCode,
-                         .parseUrl,
+                    case .badResponseCode(let code):
+                        if code == 401 {
+                            completion(.failure(AuthError.loginNeeded))
+                            return
+                        }
+                    case .parseUrl,
                          .parseData,
                          .notFound:
                         // fallthrough do default-errorhandling
@@ -167,12 +171,13 @@ extension KeycloakAuthorization {
                     }
                 }
 
-                let error = error as NSError
-                if error.domain == NSURLErrorDomain &&
-                    error.code == NSURLErrorNotConnectedToInternet {
+                let nserror = error as NSError
+                if nserror.domain == NSURLErrorDomain &&
+                    (nserror.code == NSURLErrorNotConnectedToInternet ||
+                        nserror.code == NSURLErrorDataNotAllowed) {
                     completion(Result.failure(NetworkError.noInternetConnectivity))
                 } else {
-                    completion(Result.failure(AuthError.loginNeeded))
+                    completion(Result.failure(error))
                 }
             } else if let credentials = credentials {
                 do {

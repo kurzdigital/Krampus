@@ -72,7 +72,7 @@
 /* Begin PBXFileReference section */
 		04FAAD7EC3B27F32FE71C970E0E1E47E /* Pods-Krampus_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Krampus_Example-Info.plist"; sourceTree = "<group>"; };
 		064EBEC13ECF86614A116D120435DD8E /* Pods-Krampus_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Krampus_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		0663A5FD88824BCC4A1DC332589C8D7B /* Krampus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Krampus.framework; path = Krampus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0663A5FD88824BCC4A1DC332589C8D7B /* Krampus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Krampus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B35B7E21A10DFBCC468F83BFF419737 /* Pods-Krampus_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Krampus_Tests-Info.plist"; sourceTree = "<group>"; };
 		0BB82E2455B97E86128719D05BAE9D61 /* Pods-Krampus_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Krampus_Example.release.xcconfig"; sourceTree = "<group>"; };
 		15701E3144C329A9FDD89DCC0E64ACC0 /* DownloadResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownloadResource.swift; path = Santa/Classes/Model/Download/DownloadResource.swift; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 		2E7951EF6D0E6E6A8869B666EA7BB608 /* Santa-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Santa-prefix.pch"; sourceTree = "<group>"; };
 		2E7F4834B11D718405E8F00A5674C443 /* Pods-Krampus_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Krampus_Tests-umbrella.h"; sourceTree = "<group>"; };
 		2F467BE8EEB62E028AEF0952D359D887 /* Header+Method.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Header+Method.swift"; path = "Santa/Classes/Model/Header+Method.swift"; sourceTree = "<group>"; };
-		3300D159F4B2B7F51006D372B3B6CA38 /* Krampus.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Krampus.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3300D159F4B2B7F51006D372B3B6CA38 /* Krampus.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Krampus.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3A8DF8886109BFBCE160238225ED8450 /* Pods-Krampus_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Krampus_Example-umbrella.h"; sourceTree = "<group>"; };
 		405C88327A4B27418602CFC25CDEB7A0 /* Santa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Santa.debug.xcconfig; sourceTree = "<group>"; };
 		427954D219327C10DA271C1E43747E10 /* Santa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Santa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,7 +99,7 @@
 		62DE0E666055E752DE1E8B12E6F93884 /* Santa.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Santa.modulemap; sourceTree = "<group>"; };
 		6426754A5AC2173662DD02780FCFBE6C /* Krampus-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Krampus-Info.plist"; sourceTree = "<group>"; };
 		67C18CB6C142D2CEBEF4AA41459D83A7 /* Krampus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Krampus.debug.xcconfig; sourceTree = "<group>"; };
-		69F372E8BA614976F0D26980407EDEE9 /* Santa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Santa.framework; path = Santa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69F372E8BA614976F0D26980407EDEE9 /* Santa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Santa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DC79D115BA59CBBBDC39CC76628A6E4 /* Krampus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Krampus.swift; path = Krampus/Classes/Krampus.swift; sourceTree = "<group>"; };
 		70F19769C9AFDD74F70697DE0ABE9C0D /* Pods-Krampus_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Krampus_Example.modulemap"; sourceTree = "<group>"; };
 		77D50B99AAECF1F0DD9AE1A2B45E67D6 /* Krampus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Krampus.release.xcconfig; sourceTree = "<group>"; };
@@ -111,21 +111,21 @@
 		92142942DA12522E835188EEA1AD64D7 /* Santa-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Santa-umbrella.h"; sourceTree = "<group>"; };
 		9AC527E0D302AABC499554E0FC5C05B5 /* Resource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = Santa/Classes/Resource.swift; sourceTree = "<group>"; };
 		9C5E2D7778925F69EC8BEBFD0A113B30 /* Krampus-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Krampus-prefix.pch"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E589150F771960CB40F9D5B8E82657D /* Pods-Krampus_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Krampus_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		AF837E858B9299A85BA55C988BF2FB15 /* KeycloakAuthorization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeycloakAuthorization.swift; path = Krampus/Classes/KeycloakAuthorization.swift; sourceTree = "<group>"; };
 		B27F77959941E92A4B30CEC0073AF7CD /* Pods-Krampus_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Krampus_Tests-dummy.m"; sourceTree = "<group>"; };
 		B6FAE1462D85AF816F322E6547831600 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		C006E4ADD66C3CE41C3E19235934BC45 /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Santa/Classes/ImageCache.swift; sourceTree = "<group>"; };
-		C3496D8FCF31930EA7DFBAFADCBE1F7D /* Pods_Krampus_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Krampus_Example.framework; path = "Pods-Krampus_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3496D8FCF31930EA7DFBAFADCBE1F7D /* Pods_Krampus_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Krampus_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C67717899215F066906F7AA7ACA5A7F0 /* Krampus-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Krampus-umbrella.h"; sourceTree = "<group>"; };
-		C7A1E6C50F24F9B9BCA440E460F7D4F5 /* Pods_Krampus_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Krampus_Tests.framework; path = "Pods-Krampus_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7A1E6C50F24F9B9BCA440E460F7D4F5 /* Pods_Krampus_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Krampus_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7CDB80EE1E2760EC6089F26AF6B584B /* DownloadedFilesManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownloadedFilesManager.swift; path = Santa/Classes/Model/Download/DownloadedFilesManager.swift; sourceTree = "<group>"; };
-		C7D12B6BD26E6BD02EE9CDD13EB3745B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		C7D12B6BD26E6BD02EE9CDD13EB3745B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		E6592E0F84A3888BE9384217B25EA5D8 /* Pods-Krampus_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Krampus_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		E7CA4F061EF697C709DAECDA57E7426C /* Pods-Krampus_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Krampus_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EABE0979764308AF0FD63AAAD33D4F6A /* Santa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Santa.release.xcconfig; sourceTree = "<group>"; };
-		F9E30630AC35A7626E8F4C8A2251DA7B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		F9E30630AC35A7626E8F4C8A2251DA7B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FE8D622E4D0CD5094A1509F53BC1140C /* CredentialsKeychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CredentialsKeychain.swift; path = Krampus/Classes/CredentialsKeychain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -296,7 +296,6 @@
 				7D5AC457088846A8C2C36D61631A4178 /* Webservice.swift */,
 				64016E9C22F05ACB8B91C6315AED7AEF /* Support Files */,
 			);
-			name = Santa;
 			path = Santa;
 			sourceTree = "<group>";
 		};
@@ -461,7 +460,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -609,7 +608,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Santa/Santa-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Santa/Santa-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Santa/Santa.modulemap";
 				PRODUCT_MODULE_NAME = Santa;
@@ -641,7 +640,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Santa/Santa-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Santa/Santa-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Santa/Santa.modulemap";
 				PRODUCT_MODULE_NAME = Santa;
@@ -672,7 +671,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-Krampus_Example/Pods-Krampus_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Krampus_Example/Pods-Krampus_Example.modulemap";
@@ -705,7 +704,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-Krampus_Tests/Pods-Krampus_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Krampus_Tests/Pods-Krampus_Tests.modulemap";
@@ -739,7 +738,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Krampus/Krampus-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Krampus/Krampus-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Krampus/Krampus.modulemap";
 				PRODUCT_MODULE_NAME = Krampus;
@@ -770,7 +769,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-Krampus_Tests/Pods-Krampus_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Krampus_Tests/Pods-Krampus_Tests.modulemap";
@@ -813,6 +812,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -835,13 +835,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -873,6 +872,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -898,7 +898,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -927,7 +927,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-Krampus_Example/Pods-Krampus_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Krampus_Example/Pods-Krampus_Example.modulemap";
@@ -961,7 +961,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Krampus/Krampus-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Krampus/Krampus-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Krampus/Krampus.modulemap";
 				PRODUCT_MODULE_NAME = Krampus;
