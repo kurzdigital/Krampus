@@ -62,7 +62,7 @@ webservice.authorization = authorization
 
 ## Requirements
 * Swift 5
-* iOS 9.0 or newer
+* iOS 12.0 or newer
 
 ## Installation
 
