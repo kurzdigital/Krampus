@@ -79,7 +79,7 @@ pod 'Santa'
 
 ## Author
 
-Christian Braun
+KURZ Digital Solutions GmbH & Co. KG
 
 ## License
 
