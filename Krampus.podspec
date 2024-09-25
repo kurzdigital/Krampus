@@ -10,13 +10,13 @@ Pod::Spec.new do |s|
 
   s.homepage         = 'https://github.com/kurzdigital/Krampus'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Christian Braun' => 'christian.braun@kurzdigital.com' }
+  s.author           = { 'KURZ Digital Solutions GmbH & Co. KG' => 'ios@kurzdigital.com' }
   s.source           = { :git => 'https://github.com/kurzdigital/krampus.git', :tag => s.version.to_s }
 
   s.swift_version = "5.0"
   s.ios.deployment_target = '12.0'
 
   s.source_files = 'Krampus/Classes/**/*'
-  
+
   s.dependency 'Santa', '~> 0.7'
 end

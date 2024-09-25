@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## Krampus
 
-Copyright (c) 2019 Christian Braun <braun.christian.bamberg@gmail.com>
+Copyright (c) 2019 KURZ Digital Solutions GmbH & Co. KG <ios@kurzdigital.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -26,7 +26,7 @@ THE SOFTWARE.
 
 ## Santa
 
-Copyright (c) 2019 Christian Braun <braun.christian.bamberg@gmail.com>
+Copyright (c) 2019 KURZ Digital Solutions GmbH & Co. KG <ios@kurzdigital.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

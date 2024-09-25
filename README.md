@@ -24,13 +24,13 @@ lazy var authorization = {
 }()
 ```
 
-To login with a running keycloak instance: 
+To login with a running keycloak instance:
 
 ```Swift
 authorization.login(withUsername: "username", password: "password") { result in
     switch result {
     case .success:
-        // The credentials are already saved within the keychain. 
+        // The credentials are already saved within the keychain.
         // Show the user that the login was successful
     case .failure(let error):
         // Handle error
@@ -75,7 +75,7 @@ pod 'Krampus'
 
 ## Author
 
-Christian Braun
+KURZ Digital Solutions GmbH & Co. KG
 
 ## License
 
