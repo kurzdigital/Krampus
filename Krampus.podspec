@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Krampus'
-  s.version          = '0.4.6'
+  s.version          = '0.5.0'
   s.summary          = 'Add authorization to the web requests made with the resource based network lib Santa. Currently supports Keycloak'
 
   s.description      = <<-DESC
