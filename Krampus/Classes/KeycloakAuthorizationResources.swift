@@ -21,6 +21,51 @@ extension KeycloakAuthorization {
         return resourceForPost(bodyString, url: tokenUrl)
     }
 
+    /// Creates a `DataResource` object for the given username, password, and custom-defined fields.
+    /// All custom fields are combined into a URL-encoded form string (e.g., "foo=bar").
+    /// - Note: If the scope is set inside the custom fields and `useOfflineToken` is true, the custom scope value will be ignored.
+    /// - Parameters:
+    ///   - username: The login username.
+    ///   - password: The login password.
+    ///   - customValues: A dictionary of custom fields to attach to the body data.
+    /// - Returns: A credentials `DataResource` object.
+    func create(witherUsername username: String, password: String, customValues: [[String: String]]? = nil) -> DataResource<Credentials> {
+        guard let username = username.encodeAsQueryParam(),
+            let password = password.encodeAsQueryParam(),
+            let clientId = clientId.encodeAsQueryParam() else {
+                fatalError("Redirect URI and clientId must be url encodable")
+        }
+
+        // Parse and format custom values
+        var customValuesString = ""
+        if let customValues {
+            customValuesString = customValues.map({
+                $0.compactMap({
+                    guard let key = $0.key.encodeAsQueryParam(), let value = $0.value.encodeAsQueryParam() else {
+                        return nil
+                    }
+
+                    return "\(key)=\(value)"
+                })
+                .joined()
+            })
+            .joined(separator: "&")
+        }
+
+        // Build body data and send request
+        var bodyString = "username=\(username)&password=\(password)&client_id=\(clientId)&grant_type=password"
+
+        if !customValuesString.isEmpty {
+            bodyString += "&\(customValuesString)"
+        }
+
+        if useOfflineToken {
+            bodyString.append("&scope=offline_access")
+        }
+
+        return resourceForPost(bodyString, url: tokenUrl)
+    }
+
     func create(witherUsername username: String, password: String) -> DataResource<Credentials> {
         guard let username = username.encodeAsQueryParam(),
             let password = password.encodeAsQueryParam(),
