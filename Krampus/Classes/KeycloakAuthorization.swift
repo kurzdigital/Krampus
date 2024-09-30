@@ -87,8 +87,8 @@ public struct KeycloakAuthorization: Authorization {
         }
     }
 
-    public func login(withUsername username: String, password: String, completion:  @escaping (Result<Void, Error>) -> Void) {
-        let resource = create(witherUsername: username, password: password)
+    public func login(withUsername username: String, password: String, customValues: [[String: String]]? = nil, completion:  @escaping (Result<Void, Error>) -> Void) {
+        let resource = create(witherUsername: username, password: password, customValues: customValues)
         loadCredentials(resource: resource) { result in
             switch result {
             case .success:

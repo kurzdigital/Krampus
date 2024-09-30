@@ -12,8 +12,8 @@ public protocol Authorization: RequestAuthorization {
     var jwt: JWT? { get }
 
     var isLoggedIn: Bool { get }
-    
-    func login(withUsername username: String, password: String, completion:  @escaping (Result<Void, Error>) -> Void)
+
+    func login(withUsername username: String, password: String, customValues: [[String: String]]?, completion:  @escaping (Result<Void, Error>) -> Void)
 
     func login(withAuthCode code: String, completion:  @escaping (Result<Void, Error>) -> Void)
 
